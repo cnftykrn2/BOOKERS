@@ -43,7 +43,7 @@
     </div>
   <% end %>
 
-<%= form_for(@book) do |f| %>
+<%= form_with model:@book, local:true do |f| %>
   <p class ="new">Title</p> 
   <%= f.text_field :title %>
   
